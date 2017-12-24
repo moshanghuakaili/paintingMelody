@@ -1,0 +1,237 @@
+body{
+	background:#e1ccdb;
+	z-index: 999;
+}
+header p.logo{
+	background: url("../images/logo.png") no-repeat;
+	background-size: 100% auto;
+	width:100%;
+	height:60px;
+	border-bottom: 2px solid #ddd;
+}
+.container header{
+    background: url("../images/002.png") ;
+    background-size: 100% auto;
+    width:150px;
+    height: 100%;
+    min-height: 500px;
+    position: fixed;
+    top:0;
+    left: 0;
+    display: block;
+    padding: 30px 10px 0 10px;
+}
+.headerContainer{
+	/*margin-bottom: 100px;*/
+}
+.headerContainer a {
+	color:#999;
+  text-align: center;
+	display: block;
+	width:100%;
+	line-height: 60px;
+	font-size: 16px;
+	border-bottom: 1px solid #ddd;
+	-moz-user-select:none;/*火狐*/
+    -webkit-user-select:none;/*webkit浏览器*/
+    -ms-user-select:none;/*IE10*/
+    user-select:none;
+}
+.headerContainer a:last-child {
+	
+	border-bottom: 2px solid #ddd;
+	
+}
+.headerContainer a:hover{
+    color:#777;
+    font-size: 20px;
+
+    /*box-shadow: 2px 2px 5px #ddd;*/
+}
+.headerContainer a.select{
+    font-size: 20px;
+    color: #8085e7;
+}
+.headerContainer a.select::hover{
+    font-size: 40px;
+    color: #8085e7;
+}
+.headerControl{
+	/*position: absolute;
+	bottom: 120px;
+	left: 0px;*/
+	/*padding: 0 10px;*/
+}
+.musicVolume{
+	display: inline-block;
+	font-size: 20px;
+	line-height: 50px;
+	color: #999;
+	width: 40px;
+	vertical-align: middle;
+	text-align: center;
+	-moz-user-select:none;/*火狐*/
+    -webkit-user-select:none;/*webkit浏览器*/
+    -ms-user-select:none;/*IE10*/
+    user-select:none;
+    cursor: pointer;
+}
+.controlSlider{
+	height:50px;
+	border-bottom: 1px solid #ddd;
+	border-left: 0px;
+	border-right: 0px;
+	display: inline-block;
+	width: 150px;
+	vertical-align: top;
+	border-left: 0px;
+	border-right: 0px;
+	cursor: pointer;
+}
+.controlPicIcon{
+	display: inline-block;
+  border-bottom: 2px solid #ddd;
+	width: 74px;
+	line-height: 50px;
+	font-size: 18px;
+	text-align: center;
+	color: #999;
+}
+.controlPicIcon:hover{
+	color: #666;
+}
+.controlPicIcon:first-child{
+	border-right: 1px solid #ddd;
+}
+.controlPicIcon:last-child{
+	margin-left: -5px;
+}
+.foot{
+  position: absolute;
+  bottom: 50px;
+  left: 0;  
+}
+.foot p{
+  text-align: center;
+  font-size: 12px;
+  line-height: 18px;
+  color: #666;;
+  width: 150;
+}
+/*.headerControl input{
+	width: 120px;
+	padding-top: 20px;
+}*/
+input[type=range] {
+    -webkit-appearance: none;
+    line-height: 34px;
+    vertical-align: middle;
+    width: 100px;
+    background: transparent;
+}
+
+input[type=range]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+}
+
+input[type=range]:focus {
+    outline: none; /* Removes the blue border. You should probably do some kind of focus styling for accessibility reasons though. */
+}
+
+input[type=range]::-ms-track {
+    width: 100%;
+    cursor: pointer;
+    background: transparent; /* Hides the slider so custom styles can be added */
+    border-color: transparent;
+    color: transparent;
+}
+
+/**** Style input range ****/
+input[type=range]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  height: 18px;
+  width: 18px;
+  border-radius: 50%;
+  background: #999;
+  border: 5px solid #eee;
+  cursor: pointer;
+  margin-top: -6px;
+  box-shadow: 1px 1px 1px #333, 0px 0px 1px #333; 
+}
+
+input[type=range]::-moz-range-thumb {
+  /*box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;*/
+  height: 9px;
+  width: 9px;
+  border-radius: 50%;
+  background: #999;
+  border: 4px solid #eee;
+  cursor: pointer;
+  margin-top: 5px;
+}
+
+input[type=range]::-ms-thumb {
+  /*box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;*/
+  height: 8px;
+  width: 8px;
+  border-radius: 50%;
+  background: #999;
+  border: 3px solid #eee;
+  cursor: pointer;
+  margin-top: 0px;
+}
+
+input[type=range]:disabled::-webkit-slider-thumb,
+input[type=range]:disabled::-moz-range-thumb,
+input[type=range]:disabled::-ms-thumb {
+  background: #555;
+}
+
+input[type=range]::-webkit-slider-runnable-track {
+  width: 100%;
+  height: 5px;
+  cursor: pointer;
+  background: #999;
+  border-radius: 3px;
+}
+
+input[type=range]:focus::-webkit-slider-runnable-track {
+  background: #999;
+}
+
+input[type=range]::-moz-range-track {
+  width: 100%;
+  height: 4px;
+  cursor: pointer;
+  background: #999;
+ /* border-bottom: 5px solid #8085e7;*/
+  /*padding-top: 500px;*/
+  /*border-radius: 3px;*/
+  /*margin-bottom: -80px;*/
+}
+
+input[type=range]::-ms-track {
+  width: 100%;
+  height: 5px;
+  cursor: pointer;
+  background: transparent;
+  border-color: transparent;
+  border-width: 8px 0;
+  color: transparent;
+}
+input[type=range]::-ms-fill-lower {
+  background: #999;
+  border: 0.2px solid #ddd;
+  border-radius: 2.6px;
+}
+input[type=range]:focus::-ms-fill-lower {
+  background: #999;
+}
+input[type=range]::-ms-fill-upper {
+  background: #ccc;
+  border: 0.2px solid #ddd;
+  border-radius: 2.6px;
+}
+input[type=range]:focus::-ms-fill-upper {
+  background: #ccc;
+}

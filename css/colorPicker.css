@@ -1,0 +1,191 @@
+h2{
+	color:#ccc;
+}
+h2:hover{
+	color:#666;
+}
+.colorPicker{
+    position: absolute;
+    top: 40%;
+    right: -165px;
+    width: 135px;
+    height: 250px;
+    display: inline-block;
+    overflow: hidden;
+   
+}
+.colorPicker .colorPicked{
+    width:60px;
+    height:60px;
+    position: absolute;
+    top: 75px;
+    left: -50px;
+    border-radius: 0 100% 100% 0;
+    border:20px solid rgb(208,171,191);
+    opacity: 0.5;
+    transition: opacity 0.3s ease-in;
+    -moz-transition: opacity 0.3s ease-in; 
+    -webkit-transition: opacity 0.3s ease-in;
+    z-index: 100;
+}
+.colorPicker:hover .colorPicked{
+    opacity: 1;
+}
+.colorPicker .colorSetList li.colorSet p{
+    -moz-user-select:none;/*火狐*/
+    -webkit-user-select:none;/*webkit浏览器*/
+    -ms-user-select:none;/*IE10*/
+    user-select:none;
+    cursor: pointer;
+    width: 32px;
+    height: 32px;
+    position: absolute;
+    border-radius: 100% 100% ;
+    text-align: center;
+    opacity: 0;
+}
+.colorPicker:hover .colorSetList li.colorSet p{
+    opacity: 1;
+}
+.colorPicker .colorSetList li.colorSet:nth-child(1) p{
+    top: 36px;
+    left: -2px;
+    transition: opacity 0.3s ease-in;
+    -moz-transition: opacity 0.3s ease-in; /* Firefox 4 */ 
+    -webkit-transition: opacity 0.3s ease-in;
+}
+.colorPicker .colorSetList li.colorSet:nth-child(2) p{
+    top: 50px;
+    left: 29px;
+    transition: opacity 0.3s ease-in 0.05s;
+    -moz-transition: opacity 0.3s ease-in 0.05s; /* Firefox 4 */ 
+    -webkit-transition: opacity 0.3s ease-in 0.05s;
+}
+.colorPicker .colorSetList li.colorSet:nth-child(3) p{
+    top: 76px;
+    left: 51px;
+    transition: opacity 0.3s ease-in 0.1s;
+    -moz-transition: opacity 0.3s ease-in 0.1s; /* Firefox 4 */ 
+    -webkit-transition: opacity 0.3s ease-in 0.1s;
+}
+.colorPicker .colorSetList li.colorSet:nth-child(4) p{
+    top: 109px;
+    left: 60px;
+    transition: opacity 0.3s ease-in 0.15s;
+    -moz-transition: opacity 0.3s ease-in 0.15s; /* Firefox 4 */ 
+    -webkit-transition: opacity 0.3s ease-in 0.15s;
+}
+.colorPicker .colorSetList li.colorSet:nth-child(5) p{
+    bottom: 76px;
+    left: 51px;
+    transition: opacity 0.3s ease-in 0.2s;
+    -moz-transition: opacity 0.3s ease-in 0.2s; /* Firefox 4 */ 
+    -webkit-transition: opacity 0.3s ease-in 0.2s;
+}
+.colorPicker .colorSetList li.colorSet:nth-child(6) p{
+    bottom: 50px;
+    left: 29px;
+    transition: opacity 0.3s ease-in 0.25s;
+    -moz-transition: opacity 0.3s ease-in 0.25s; /* Firefox 4 */ 
+    -webkit-transition: opacity 0.3s ease-in 0.25s;
+}
+.colorPicker .colorSetList li.colorSet:nth-child(7) p{
+    bottom: 36px;
+    left: -2px;
+    transition: opacity 0.3s ease-in 0.3s;
+    -moz-transition: opacity 0.3s ease-in 0.3s; /* Firefox 4 */ 
+    -webkit-transition: opacity 0.3s ease-in 0.3s;
+}
+.colorPicker .colorSetList li.colorSet .colorList{
+    display: none;
+}
+
+.colorPicker .colorSetList li.colorSet .colorBox{
+    width:28px;
+    height: 28px;
+    position: absolute;
+    padding: 5px;
+}
+.colorPicker .colorSetList li.colorSet .colorBox span{
+	display: block;
+	width:28px;
+    height: 28px;
+    border-radius: 100% 100%;
+}
+.colorPicker .colorSetList li .colorSet0+.colorList .colorBox:nth-child(1){
+    top: 0px;
+    left: 2px;
+}
+.colorPicker .colorSetList li .colorSet0+.colorList .colorBox:nth-child(2),
+.colorPicker .colorSetList li .colorSet1+.colorList .colorBox:nth-child(1),
+.colorPicker .colorSetList li .colorSet4+.colorList .colorBox:nth-child(6){
+    top: 13px;
+    left: 32px;
+}
+.colorPicker .colorSetList li .colorSet0+.colorList .colorBox:nth-child(3),
+.colorPicker .colorSetList li .colorSet1+.colorList .colorBox:nth-child(2),
+.colorPicker .colorSetList li .colorSet4+.colorList .colorBox:nth-child(5){
+    top: 33px;
+    left: 58px;
+}
+.colorPicker .colorSetList li .colorSet0+.colorList .colorBox:nth-child(4),
+.colorPicker .colorSetList li .colorSet1+.colorList .colorBox:nth-child(3),
+.colorPicker .colorSetList li .colorSet2+.colorList .colorBox:nth-child(1),
+.colorPicker .colorSetList li .colorSet5+.colorList .colorBox:nth-child(6),
+.colorPicker .colorSetList li .colorSet4+.colorList .colorBox:nth-child(4){
+    top: 59px;
+    left: 78px;
+}
+.colorPicker .colorSetList li .colorSet0+.colorList .colorBox:nth-child(5),
+.colorPicker .colorSetList li .colorSet1+.colorList .colorBox:nth-child(4),
+.colorPicker .colorSetList li .colorSet2+.colorList .colorBox:nth-child(2),
+.colorPicker .colorSetList li .colorSet3+.colorList .colorBox:nth-child(1),
+.colorPicker .colorSetList li .colorSet6+.colorList .colorBox:nth-child(6),
+.colorPicker .colorSetList li .colorSet5+.colorList .colorBox:nth-child(5),
+.colorPicker .colorSetList li .colorSet4+.colorList .colorBox:nth-child(3){
+    top: 90px;
+    left: 86px;
+}
+.colorPicker .colorSetList li .colorSet0+.colorList .colorBox:nth-child(6),
+.colorPicker .colorSetList li .colorSet1+.colorList .colorBox:nth-child(5),
+.colorPicker .colorSetList li .colorSet2+.colorList .colorBox:nth-child(3),
+.colorPicker .colorSetList li .colorSet3+.colorList .colorBox:nth-child(2),
+.colorPicker .colorSetList li .colorSet6+.colorList .colorBox:nth-child(5),
+.colorPicker .colorSetList li .colorSet5+.colorList .colorBox:nth-child(4),
+.colorPicker .colorSetList li .colorSet4+.colorList .colorBox:nth-child(2){
+    top: 122px;
+    left: 86px;
+}
+
+.colorPicker .colorSetList li .colorSet1+.colorList .colorBox:nth-child(6),
+.colorPicker .colorSetList li .colorSet2+.colorList .colorBox:nth-child(4),
+.colorPicker .colorSetList li .colorSet3+.colorList .colorBox:nth-child(3),
+.colorPicker .colorSetList li .colorSet6+.colorList .colorBox:nth-child(4),
+.colorPicker .colorSetList li .colorSet5+.colorList .colorBox:nth-child(3),
+.colorPicker .colorSetList li .colorSet4+.colorList .colorBox:nth-child(1){
+    top: 153px;
+    left: 78px;
+}
+
+.colorPicker .colorSetList li .colorSet2+.colorList .colorBox:nth-child(5),
+.colorPicker .colorSetList li .colorSet3+.colorList .colorBox:nth-child(4),
+.colorPicker .colorSetList li .colorSet6+.colorList .colorBox:nth-child(3),
+.colorPicker .colorSetList li .colorSet5+.colorList .colorBox:nth-child(2){
+    top: 178px;
+    left: 58px;
+}
+.colorPicker .colorSetList li .colorSet2+.colorList .colorBox:nth-child(6),
+.colorPicker .colorSetList li .colorSet3+.colorList .colorBox:nth-child(5),
+.colorPicker .colorSetList li .colorSet6+.colorList .colorBox:nth-child(2),
+.colorPicker .colorSetList li .colorSet5+.colorList .colorBox:nth-child(1){
+	top: 200px;
+    left: 32px;
+}
+.colorPicker .colorSetList li .colorSet6+.colorList .colorBox:nth-child(1),
+.colorPicker .colorSetList li .colorSet3+.colorList .colorBox:nth-child(6){
+	top: 212px;
+    left: 2px;
+}
+
+
+
